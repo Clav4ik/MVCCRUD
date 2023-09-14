@@ -1,0 +1,90 @@
+﻿@model MVCCRUD.Bond
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bond</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Broker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Broker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coupon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coupon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Percent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Percent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nominal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nominal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_of_buy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_of_buy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_of_maturity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_of_maturity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BondId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

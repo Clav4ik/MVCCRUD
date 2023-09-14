@@ -1,0 +1,96 @@
+﻿@model MVCCRUD.Bond
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bond</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Broker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Broker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coupon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coupon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Percent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Percent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nominal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nominal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_of_buy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_of_buy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_of_maturity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_of_maturity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
